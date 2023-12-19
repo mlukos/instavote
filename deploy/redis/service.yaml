@@ -3,15 +3,16 @@ kind: Service
 metadata:
   creationTimestamp: null
   labels:
-    app: vote
-  name: vote
+    app: redis
+  name: redis
 spec:
   ports:
   - name: "6379"
-    nodePort: 6379
     port: 6379
     protocol: TCP
     targetPort: 6379
   selector:
-    app: vote
-  type: NodePort
+    app: redis
+  type: ClusterIP
+status:
+  loadBalancer: {}
