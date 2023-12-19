@@ -18,6 +18,7 @@ spec:
         app: redis
     spec:
       containers:
-      - image: redis:apline
+      - image: redis:alpine
         name: redis
         resources: {}
+status: {}
