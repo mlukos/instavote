@@ -7,7 +7,7 @@ commonLabels:
   project: instavote
   env: dev
 
-commonAnotations:
+commonAnnotations:
   supported-by: "me@example.com"
 
 namespace: instavote
