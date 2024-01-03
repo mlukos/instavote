@@ -5,7 +5,7 @@ resources:
 
 replicas:
   - name: redis
-    count: 3
+    count: 1
 
 commonLabels:
   project: instavote
