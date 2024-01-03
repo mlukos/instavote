@@ -3,6 +3,10 @@ kind: Kustomization
 resources:
 - ../base
 
+replicas:
+  - name: redis
+    count: 2
+
 commonLabels:
   project: instavote
   env: dev
